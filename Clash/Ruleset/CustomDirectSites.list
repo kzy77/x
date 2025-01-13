@@ -1,0 +1,9 @@
+# 内容：CustomeDirectSites
+# 自定义直连域名
+# 免费的临时VPS
+DOMAIN-SUFFIX,app.freerdps.com
+DOMAIN-SUFFIX,learn.microsoft.com
+DOMAIN-SUFFIX,colab.research.google.com
+DOMAIN-SUFFIX,hyperbeam.com
+
+# 待添加的小众网站
