@@ -1,6 +1,5 @@
 # 内容：CustomeProxySites
 # 自定义Proxy域名
-# 免费的临时VPS
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,youtube.com
 
