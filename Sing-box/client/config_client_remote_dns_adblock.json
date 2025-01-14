@@ -150,7 +150,31 @@
         {
             // 粘贴你的客户端配置，需要保留 "tag": "proxy"
             // 可以参考github手搓配置:https://github.com/chika0801/sing-box-examples/tree/main
-            "tag": "proxy"
+            "tag": "proxy",
+            "type": "vless",
+            "listen": "::",
+            "listen_port": 443,
+            "users": [
+                {
+                    "uuid": "", // 执行此命令后删除注释 sing-box generate uuid
+                    "flow": "xtls-rprx-vision"
+                }
+            ],
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com", // 偷取证书的域名，tls1.3，h2
+                "reality": {
+                    "enabled": true,
+                    "handshake": {
+                        "server": "yahoo.com", // 偷取证书的域名
+                        "server_port": 443
+                    },
+                    "private_key": "", // 执行此命令后删除注释 sing-box generate reality-keypair
+                    "short_id": [
+                        "b2c86d5449d237fa"
+                    ]
+                }
+            }
         },
         {
             "type": "direct",
