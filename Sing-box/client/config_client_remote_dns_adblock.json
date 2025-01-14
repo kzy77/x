@@ -37,9 +37,6 @@
             {
                 "rule_set": "geosite-cn",
                 "server": "dns_direct"
-            },{
-                "rule_set": "adblock",                  // 应用名为 "adblock" 的规则集
-                "outbound": "adblock"                   // 命中规则集的流量将导流到名为 "adblock" 的出站策略进行拦截
             }
         ],
         "final": "dns_proxy"
@@ -127,6 +124,9 @@
             {
                 "ip_is_private": true,
                 "outbound": "direct"
+            },{
+                "rule_set": "adblock",                  // 应用名为 "adblock" 的规则集
+                "outbound": "adblock"                   // 命中规则集的流量将导流到名为 "adblock" 的出站策略进行拦截
             }
         ],
         "final": "proxy",
@@ -154,7 +154,7 @@
             "server": "",//TODO 1.补充server地址
             "server_port": 7777,
             "type": "vless",
-            "uuid": "068c4968-9a48-4328-bc4f-a1ce845806e9",//TODO 2.uuid
+            "uuid": "272e4fc5-4d97-4c7b-ec41-c3c8a1018553",//TODO 2.uuid
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
