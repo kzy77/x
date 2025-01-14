@@ -63,13 +63,12 @@
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
                 "download_detour": "proxy"
-            },{
-
-                "tag": "adblock",                       // 名为 "adblock"的规则集标签
-                "type": "remote",                       // 远程规则集
-                "format": "source",                     // 或 "binary"，取决于规则文件格式
-                "url": "https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.json",
-                "update_interval": 360000                  // 更新间隔，单位为秒
+            },
+            {
+                "tag": "adblock",
+                "type": "remote",
+                "format": "source",
+                "url": "https://raw.githubusercontent.com/REIJI007/AdBlock_Rule_For_Sing-box/main/adblock_reject.json"
             }
         ],
         "rules": [
@@ -124,9 +123,10 @@
             {
                 "ip_is_private": true,
                 "outbound": "direct"
-            },{
-                "rule_set": "adblock",                  // 应用名为 "adblock" 的规则集
-                "outbound": "adblock"                   // 命中规则集的流量将导流到名为 "adblock" 的出站策略进行拦截
+            },
+            {
+                "rule_set": "adblock",
+                "outbound": "adblock"
             }
         ],
         "final": "proxy",
@@ -148,13 +148,11 @@
     ],
     "outbounds": [
         {
-            // 粘贴你的客户端配置，需要保留 "tag": "proxy"
-            // 可以参考github手搓配置:https://github.com/chika0801/sing-box-examples/tree/main
             "tag": "proxy",
-            "server": "",//TODO 1.补充server地址
+            "server": "",
             "server_port": 7777,
             "type": "vless",
-            "uuid": "272e4fc5-4d97-4c7b-ec41-c3c8a1018553",//TODO 2.uuid
+            "uuid": "272e4fc5-4d97-4c7b-ec41-c3c8a1018553",
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
@@ -169,7 +167,7 @@
                     "enabled": true,
                     "fingerprint": "edge"
                 }
-            }          
+            }
         },
         {
             "type": "direct",
@@ -185,7 +183,7 @@
         },
         {
             "type": "block",
-            "tag": "adblock"                          // 配合远程 "rule_set" 进行域名拦截
+            "tag": "adblock"
         }
     ],
     "experimental": {
