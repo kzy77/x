@@ -95,7 +95,7 @@
                 "server": "fakeip"
             },
             {
-                "rule_set": "custome-direct",
+                "rule_set": "custom-direct",
                 "server": "local"
             },
             {
