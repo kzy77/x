@@ -151,10 +151,10 @@
             // 粘贴你的客户端配置，需要保留 "tag": "proxy"
             // 可以参考github手搓配置:https://github.com/chika0801/sing-box-examples/tree/main
             "tag": "proxy",
-            "server": "",
+            "server": "",//TODO 1.补充server地址
             "server_port": 7777,
             "type": "vless",
-            "uuid": "068c4968-9a48-4328-bc4f-a1ce845806e9",
+            "uuid": "068c4968-9a48-4328-bc4f-a1ce845806e9",//TODO 2.uuid
             "flow": "xtls-rprx-vision",
             "tls": {
                 "enabled": true,
