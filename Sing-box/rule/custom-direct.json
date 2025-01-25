@@ -2,7 +2,8 @@
     "rules": [
       {
         "domain_suffix": [
-          "kimi.moonshot.cn"
+          "kimi.moonshot.cn",
+          "make.com"
         ]
       }
     ],
